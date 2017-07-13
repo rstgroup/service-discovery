@@ -1,0 +1,15 @@
+{
+    "name": "rstgroup/service-discovery",
+    "description": "This library includes abstraction for registration and deregistration in Service Discovery.",
+    "authors": [
+        {
+            "name": "Artur Wolny",
+            "email": "artur.wolny@rst.com.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RstGroup\\ServiceDiscovery\\": "src/"
+        }
+    }
+}
