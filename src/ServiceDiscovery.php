@@ -9,22 +9,22 @@ use RstGroup\ServiceDiscovery\Exception\ServiceDiscoveryException;
 interface ServiceDiscovery
 {
     /**
-     * @param string $name
-     * @param array  $options vendor-specific additional options
+     * @param string $serviceId service identifier
+     * @param array  $options   vendor-specific additional options
      *
-     * @return mixed
+     * @return string service identifier
      *
      * @throws ServiceDiscoveryException
      */
-    public function register($name, array $options);
+    public function register($serviceId, array $options);
 
     /**
-     * @param string $name
-     * @param array  $options vendor-specific additional options
+     * @param string $serviceId service identifier
+     * @param array  $options   vendor-specific additional options
      *
-     * @return mixed
+     * @return void
      *
      * @throws ServiceDiscoveryException
      */
-    public function deregister($name, array $options);
+    public function deregister($serviceId, array $options);
 }
