@@ -16,7 +16,7 @@ interface ServiceDiscovery
      *
      * @throws ServiceDiscoveryException
      */
-    public function register($serviceId, array $options);
+    public function register($serviceId, array $options = array());
 
     /**
      * @param string $serviceId service identifier
@@ -26,5 +26,5 @@ interface ServiceDiscovery
      *
      * @throws ServiceDiscoveryException
      */
-    public function deregister($serviceId, array $options);
+    public function deregister($serviceId, array $options = array());
 }
