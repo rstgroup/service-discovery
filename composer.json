@@ -1,6 +1,7 @@
 {
     "name": "rstgroup/service-discovery",
     "description": "This library includes abstraction for registration and deregistration in Service Discovery.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Artur Wolny",
